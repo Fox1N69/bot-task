@@ -11,3 +11,8 @@
 [31mERRO[0m[2024-07-27T21:04:43+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
 [31mERRO[0m[2024-07-27T21:07:58+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
 [31mERRO[0m[2024-07-27T21:08:49+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T21:28:40+05:00]handler.go:94 github.com/Fox1N69/bot-task/handler.(*Handler).handleTelegramSubscription() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T22:12:45+05:00]handler.go:269 github.com/Fox1N69/bot-task/handler.(*Handler).processWalletConnection() Failed connect to the wallet: Post "/tonconnect-manifest.json/connect_wallet": unsupported protocol scheme "" 
+[31mERRO[0m[2024-07-27T22:12:45+05:00]handler.go:215 github.com/Fox1N69/bot-task/handler.(*Handler).handleWalletConnection() Failed to process wallet connection: Post "/tonconnect-manifest.json/connect_wallet": unsupported protocol scheme "" 
+[31mERRO[0m[2024-07-27T22:17:48+05:00]handler.go:269 github.com/Fox1N69/bot-task/handler.(*Handler).processWalletConnection() Failed connect to the wallet: unexpected status: 404 Not Found 
+[31mERRO[0m[2024-07-27T22:17:48+05:00]handler.go:215 github.com/Fox1N69/bot-task/handler.(*Handler).handleWalletConnection() Failed to process wallet connection: unexpected status: 404 Not Found 

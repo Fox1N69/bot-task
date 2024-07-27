@@ -13,6 +13,8 @@ type Storage interface {
 	CreateButton(button *models.Button) error
 	UpdateButton(button *models.Button) error
 	GetAllButtons() ([]models.Button, error)
+	RecordButtonPress(userID int, buttonName string) error
+	RecordWalletConnection(userID int, wallet string) error
 }
 type storage struct {
 	db *gorm.DB
@@ -63,4 +65,26 @@ func (s *storage) GetAllButtons() ([]models.Button, error) {
 	var buttons []models.Button
 	result := s.db.Find(&buttons)
 	return buttons, result.Error
+}
+
+func (s *storage) RecordButtonPress(userID int, buttonName string) error {
+	// Проверьте, что кнопка уже не была нажата
+	var existingPress models.ButtonPress
+	if err := s.db.Where("user_id = ? AND button = ?", userID, buttonName).First(&existingPress).Error; err == nil {
+		return nil // кнопка уже была нажата
+	}
+
+	// Запись нового нажатия
+	return s.db.Create(&models.ButtonPress{
+		UserID:  userID,
+		Button:  buttonName,
+		Pressed: true,
+	}).Error
+}
+
+func (s *storage) RecordWalletConnection(userID int, wallet string) error {
+	return s.db.Create(&models.WalletConnection{
+		UserID: userID,
+		Wallet: wallet,
+	}).Error
 }

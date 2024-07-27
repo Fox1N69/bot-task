@@ -8,4 +8,11 @@ type User struct {
 	TwitterSubscribed bool
 	TGSubscribed      bool
 	JoinDate          string
+	WalletConnected   bool
+}
+
+type WalletConnection struct {
+	gorm.Model
+	UserID int `gorm:"index"`
+	Wallet string
 }

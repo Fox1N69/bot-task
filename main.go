@@ -23,6 +23,8 @@ func main() {
 	i.Migrate(
 		&models.User{},
 		&models.Button{},
+		&models.WalletConnection{},
+		&models.ButtonPress{},
 	)
 	log.Info("Database migrate success")
 
