@@ -4,7 +4,7 @@ import "gorm.io/gorm"
 
 type User struct {
 	gorm.Model
-	TelegramID        int64 `json:"unique"`
+	TelegramID        int `json:"unique"`
 	TwitterSubscribed bool
 	TGSubscribed      bool
 	JoinDate          string

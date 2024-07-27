@@ -1,0 +1,13 @@
+[31mERRO[0m[2024-07-27T20:28:05+05:00]handler.go:59 github.com/Fox1N69/bot-task/handler.(*Handler).HandleStart() Failed to send message: Bad Request: field "inline_keyboard" must be of type Array 
+[31mERRO[0m[2024-07-27T20:29:09+05:00]handler.go:64 github.com/Fox1N69/bot-task/handler.(*Handler).HandleStart() Failed to send message: Bad Request: field "inline_keyboard" must be of type Array 
+[31mERRO[0m[2024-07-27T20:30:29+05:00]handler.go:63 github.com/Fox1N69/bot-task/handler.(*Handler).HandleStart() Failed to send message: Bad Request: field "inline_keyboard" must be of type Array 
+[31mERRO[0m[2024-07-27T20:33:15+05:00]handler.go:73 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to get button: record not found       
+[31mERRO[0m[2024-07-27T20:33:17+05:00]handler.go:73 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to get button: record not found       
+[31mERRO[0m[2024-07-27T20:33:18+05:00]handler.go:73 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to get button: record not found       
+[31mERRO[0m[2024-07-27T20:37:50+05:00]handler.go:73 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to get button: record not found       
+[31mERRO[0m[2024-07-27T20:38:02+05:00]handler.go:73 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to get button: record not found       
+[31mERRO[0m[2024-07-27T21:01:29+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T21:04:25+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T21:04:43+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T21:07:58+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
+[31mERRO[0m[2024-07-27T21:08:49+05:00]handler.go:90 github.com/Fox1N69/bot-task/handler.(*Handler).HandleCallback() Failed to check subscription: Bad Request: chat not found 
